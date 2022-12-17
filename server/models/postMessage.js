@@ -1,7 +1,7 @@
 const Mongoose = require("mongoose");
 
 const postsSchema = Mongoose.Schema({
-    title: String,
+    // title: String,
     message: String,
     creator: String,
     tags: [String],
