@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
+import Auth from "./components/Auth/Auth";
 
 const App = () => {
   return (
@@ -14,7 +15,6 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <Route path="/auth" component={Auth} />
         </Switch>
-        <Home />
       </Container>
     </BrowserRouter>
   );
