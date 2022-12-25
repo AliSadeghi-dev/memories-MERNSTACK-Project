@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { GoogleLogin } from "react-google-login";
 import {
   Avatar,
@@ -18,6 +19,8 @@ const Auth = () => {
   const classes = useStyle();
   const [isSignup, setIsSignUp] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
+  const dispatch = useDispatch();
 
   const handleSubmit = () => {};
 
